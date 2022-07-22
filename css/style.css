@@ -165,6 +165,10 @@ button.block {
     user-select: none;
 }
 
+.filmes h2 {
+    margin-left: 12px;
+}
+
 /* .filmes {
     background-image: url("..//img/cinema.webp");
     background-repeat: no-repeat;
