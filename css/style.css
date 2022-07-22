@@ -1,0 +1,174 @@
+.input-name {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.botao {
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(8, 108, 185);
+    width: max-content;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.botao-filme {
+    background-color: rgb(235, 52, 52);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quiz {
+    margin-top: 25px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    display: flow-root;
+    font-family: 'Mitr', sans-serif;
+
+}
+
+body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/cinema.webp");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    filter: blur(3px);
+
+}
+
+.alternativa {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.quiz-input {
+    display: none;
+}
+
+.quiz-input:checked + .alternativa {
+    border: 1px solid rgb(199, 213, 71);
+}
+
+.botao-quiz {
+    margin: 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Mitr', sans-serif;
+}
+
+label.active {
+    border: 1px solid rgb(11, 194, 51)!important;
+    background-color: rgb(11, 194, 51)!important;
+    color: #fff;
+
+}
+
+label.error {
+    border: 1px solid rgb(153, 13, 13)!important;
+    color: #fff;
+    background-color: rgb(153, 13, 13)!important;
+    
+}
+
+.voltar {
+    background-color: #1bbb11;
+    color: #fff;
+}
+
+.quiz legend {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.alternativa {
+    font-size: 19px;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+}
+
+#saudacao {
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Mitr', sans-serif;
+    margin-left: 15px;
+}
+
+.center h1 {
+    font-size: 50px;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    
+}
+
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #17171754;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #3333335c;
+    display: none;
+}
+
+.modal.active,
+.layer.active {
+    display: block;
+}
+
+button.block {
+    background-color: #9fa1a1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* .filmes {
+    background-image: url("..//img/cinema.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+

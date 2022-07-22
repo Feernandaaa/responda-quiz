@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filme</title>
+</head>
+<body class="filmes">
+    <h3 id="saudacao"></h3>
+    <div class="quiz">
+        <fieldset>
+            <legend>QUESTÃO 1.QUAL O PRIMEIRO HERÓI QUE APARECE NO FILME ?</legend>
+
+            <input class="quiz-input" type="radio" id="q1_alt1" name="q1">
+            <label class="alternativa" for="q1_alt1">A) CAPITÃ MARVEL</label>
+
+            <input class="quiz-input" type="radio" id="q1_alt2" name="q1">
+            <label class="alternativa" for="q1_alt2">B) HOMEM DE FERRO</label>
+
+            <input class="quiz-input" type="radio" id="q1_alt3" name="q1">
+            <label class="alternativa" for="q1_alt3">C) GAVIÃO ARQUEIRO</label>
+
+            <button class="botao botao-quiz" data-resposta="3">RESPONDER</button>
+        </fieldset>
+    </div>
+    <div class="quiz">
+        <fieldset>
+            <legend>QUESTÃO 2.QUAL HERÓI É RESGATADO PELA CAPITÃ MARVEL JUNTO COM TONY STARK?.</legend>
+
+            <input class="quiz-input" type="radio" id="q2_alt1" name="q2">
+            <label class="alternativa" for="q2_alt1">A) NEBULOSA</label>
+        
+            <input class="quiz-input" type="radio" id="q2_alt2" name="q2">
+            <label class="alternativa" for="q2_alt2">B) ROCKET</label>
+       
+            
+            <input class="quiz-input" type="radio" id="q2_alt3" name="q2">
+            <label class="alternativa" for="q2_alt3">C) HULK</label>
+
+            <button class="botao botao-quiz" data-resposta="1">RESPONDER</button>
+        </fieldset>
+    </div>
+    <div class="quiz">
+        <fieldset>
+            <legend>QUESTÃO 3.QUAL HERÓI USA A MANOPLA PARA TENTAR REVERTER A AÇÃO DE THANOS?.</legend>
+
+            <input class="quiz-input" type="radio" id="q3_alt1" name="q3">
+            <label class="alternativa" for="q3_alt1">A) HOMEM DE FERRO</label>
+        
+            <input class="quiz-input" type="radio" id="q3_alt2" name="q3">
+            <label class="alternativa" for="q3_alt2">B) HULK</label>
+       
+            
+            <input class="quiz-input" type="radio" id="q3_alt3" name="q3">
+            <label class="alternativa" for="q3_alt3">C) THOR</label>
+
+            <button class="botao botao-quiz" data-resposta="2">RESPONDER</button>
+        </fieldset>
+    </div>
+    <div class="layer">
+
+    </div>
+    <div class="modal">
+        <h2>SUA PONTUAÇÃO</h2>
+        <p>Respostas Certas <span id="corretas">0</span></p>
+        <p>Respostas Erradas <span id="erradas">0</span></p>
+        <a class="botao voltar" href="index.html">JOGAR NOVAMENTE</a>   
+    </div>
+    <a class="botao voltar" href="index.html">VOLTAR AO INICIO</a>
+    <script src="js/filme.js"></script>
+</body>
+</html>
